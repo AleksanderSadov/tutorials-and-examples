@@ -246,6 +246,7 @@ public class DetailActivity extends AppCompatActivity implements
         }
 
 //      TODO (7) Display the weather icon using mDetailBinding
+        mDetailBinding.
 
         /****************
          * Weather Date *

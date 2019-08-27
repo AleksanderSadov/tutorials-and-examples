@@ -13,7 +13,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:gravity="start"
-            android:text="@string/humidity"
+            android:text="@string/humidity_label"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/tv_humidity_value"/>
@@ -24,6 +24,48 @@
             tools:text="78 %"
             app:layout_constraintTop_toTopOf="@id/tv_humidity_label"
             app:layout_constraintLeft_toRightOf="@id/tv_humidity_label"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_pressure_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:gravity="start"
+            android:text="@string/pressure_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_humidity_value"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_pressure_value"/>
+        <TextView
+            android:id="@+id/tv_pressure_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="998 hPa"
+            app:layout_constraintTop_toTopOf="@id/tv_pressure_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_pressure_label"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_wind_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:gravity="start"
+            android:text="@string/wind_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_pressure_value"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_wind_value"/>
+        <TextView
+            android:id="@+id/tv_wind_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="3 km/h SW"
+            app:layout_constraintTop_toTopOf="@id/tv_wind_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_wind_label"
             app:layout_constraintRight_toRightOf="parent"/>
     </android.support.constraint.ConstraintLayout>
 </layout>
