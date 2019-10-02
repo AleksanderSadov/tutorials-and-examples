@@ -12,7 +12,3 @@ fi
 if ! [[ -d "/vagrant/node_modules" ]]; then
   npm install --prefix /vagrant --no-bin-links
 fi
-
-if ! [[ -x $(command -v forever) ]]; then
-  npm install -g forever
-fi
